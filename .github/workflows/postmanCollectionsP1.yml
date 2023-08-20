@@ -18,4 +18,4 @@ jobs:
           
           - name: rum collections
             run: |
-                newman run ./tests/pokemon-api-collection.json
+                newman run ./Simple_Book_API.postman_collection.json
