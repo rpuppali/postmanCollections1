@@ -3,7 +3,7 @@ name: postman-pull-push-requests
 on: [push,pull_request]
 
 jobs:
-    newman:
+    test-api:
         runs-on: ubuntu-latest
         steps:
           - name: Check out Git repository
@@ -12,6 +12,6 @@ jobs:
             uses: actions/setup-node@v1
             with:
                 node-version: '12.x'
-             run: npm install
+        
           - name: install newman
-            uses: npm install -g newman
+            run: npm install -g newman
