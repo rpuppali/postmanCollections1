@@ -15,3 +15,7 @@ jobs:
         
           - name: install newman
             run: npm install -g newman
+          
+          - name: rum collections
+            run: |
+                newman run ./tests/pokemon-api-collection.json
