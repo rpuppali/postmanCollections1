@@ -101,6 +101,11 @@
 			"key": "accessToken",
 			"value": "",
 			"type": "string"
+		},
+		{
+			"key": "baseUrl",
+			"value": "https://simple-books-api.glitch.me",
+			"type": "string"
 		}
 	]
 }
