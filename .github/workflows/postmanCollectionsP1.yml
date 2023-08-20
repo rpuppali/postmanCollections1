@@ -1,0 +1,14 @@
+name: postman-pull-push-requests
+
+on: [push,pull_request]
+
+jobs:
+    newman:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Check out Git repository
+            uses: actions/checkout@masterv3
+          - name: Install node js
+            uses: actions/setup-node@v1
+            with:
+                node-version: '12.x'
